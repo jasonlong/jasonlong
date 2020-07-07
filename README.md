@@ -10,6 +10,6 @@ Recently I've been playing with Blender as well as [Three.js](https://threejs.or
 
 Over the years, I've had the opportunity to work on a few logos for open source projects.
 
-| Git | libgit2 | Neovim | MacVim | tmux |
-| --- | ------- | ------ | ------ | ---- |
-| <img src="https://github.com/jasonlong/jasonlong/blob/master/git.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/libgit2.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/neovim.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/macvim.png" width="100" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/tmux.png" width="200" /> |
+| Git | libgit2 | Neovim | tmux | MacVim |
+| --- | ------- | ------ | ---- | ------ |
+| <img src="https://github.com/jasonlong/jasonlong/blob/master/git.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/libgit2.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/neovim.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/tmux.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/macvim.png" width="100" />
