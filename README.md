@@ -13,3 +13,5 @@ Over the years, I've had the opportunity to work on a few logos for open source 
 | Git | libgit2 | Neovim | tmux | MacVim |
 | --- | ------- | ------ | ---- | ------ |
 | <img src="https://github.com/jasonlong/jasonlong/blob/master/git.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/libgit2.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/neovim.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/tmux.png" width="200" /> | <img src="https://github.com/jasonlong/jasonlong/blob/master/macvim.png" width="100" />
+
+![views](https://github-profile-view-counter.vercel.app/jasonlong/jasonlong)
