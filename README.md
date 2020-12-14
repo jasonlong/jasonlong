@@ -1,6 +1,8 @@
 ### Hiya! 👋
 
-I'm a product designer on the Actions team at GitHub. I've started here in 2012 so I've the opportunity to work on lots of different things including the pull request merge box UI, repository topics, the user profile page, [signed commits UI](https://github.blog/2016-04-05-gpg-signature-verification/), the [default Pages theme](https://github.com/jasonlong/cayman-theme/), tons of internal projects, and even a [t-shirt](https://github.myshopify.com/collections/shirts/products/arctocat).
+After a long stint as a GitHub product designer, I recently started a new role with [PlanetScale](https://planetscale.com). 
+
+While at GitHub, I worked on the Actions team. Prior to that, I had the opportunity to work on lots of different things including the pull request merge box UI, repository topics, the user profile page, [signed commits UI](https://github.blog/2016-04-05-gpg-signature-verification/), the [default Pages theme](https://github.com/jasonlong/cayman-theme/), tons of internal projects, and even a [t-shirt](https://github.myshopify.com/collections/shirts/products/arctocat).
 
 I'm a big Vim nerd and have written a [plugin](https://github.com/jasonlong/vim-textobj-css) and [a color theme](https://github.com/jasonlong/lavalamp) (though I now use a [customized version of Nord](https://github.com/jasonlong/nordish-vim) with higher contrast).
 
