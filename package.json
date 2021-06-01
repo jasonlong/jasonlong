@@ -1,0 +1,15 @@
+{
+  "name": "readme-messages",
+  "version": "0.0.0",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.3.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.22.1",
+    "js-quantities": "^1.7.6",
+    "node-emoji": "^1.10.0",
+    "openweather-apis": "^4.4.1"
+  }
+}
