@@ -1,0 +1,32 @@
+name: Update readme
+
+on:
+  workflow_dispatch:
+
+jobs:
+  readme:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+    - run: npm install
+        
+    - name: Generate readme
+      env:
+       WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}    
+      run: node build-svg.js
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with:
+        author_name: Jason Long
+        author_email: jason@jasonlong.me
+        message: "Auto updating my readme"
+        add: "*.svg"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
