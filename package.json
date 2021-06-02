@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "date-fns": "^2.22.1",
-    "js-quantities": "^1.7.6",
-    "node-emoji": "^1.10.0",
-    "openweather-apis": "^4.4.1"
+    "got": "^11.8.2",
+    "js-quantities": "^1.7.6"
   }
 }
