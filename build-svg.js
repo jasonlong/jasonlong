@@ -40,7 +40,6 @@ const emojis = {
 
 // Time working at PlanetScale
 const today = new Date();
-console.log(today);
 const todayDay = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(
   today
 );
