@@ -1,0 +1,17 @@
+{
+  "env": {
+      "browser": true,
+      "es2020": true
+  },
+  "extends": [
+      "prettier"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+  },
+  "rules": {
+    "semi": 0,
+    "comma-dangle": 0
+  }  
+}
