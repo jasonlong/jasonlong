@@ -299,7 +299,7 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="460" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="500" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I’m a product designer. I used to work at GitHub,</text>
     <text x="15" y="50">but I’ve been at PlanetScale for about about 1 year now.</text>
   </g>
@@ -375,7 +375,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 288)" class="msg-6">
-    <rect width="220" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Have a great Friday! <tspan class="emoji">👋</tspan></text>  
+    <rect width="245" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Have a great Saturday! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
