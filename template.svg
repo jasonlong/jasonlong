@@ -299,7 +299,7 @@
 
   <!-- Work ... -->
   <g transform="translate(10, 120)" class="msg-3">
-    <rect width="500" height="66.1302" rx="18.0355" class="bubble" />
+    <rect width="439" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I’m a product designer. I used to work at GitHub,</text>
     <text x="15" y="50">but I’ve been at PlanetScale for {psTime} now.</text>
   </g>
