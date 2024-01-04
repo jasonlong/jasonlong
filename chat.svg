@@ -276,7 +276,7 @@
   <g transform="translate(10, 48)" class="msg-2">
     <rect width="439" height="66.1302" rx="18.0355" class="bubble" />
     <text x="15" y="27">I live in Columbus, Ohio where it’s supposed to be</text>
-    <text x="15" y="50">35° F (2° C) and <tspan class="emoji">🌥</tspan> today.</text>
+    <text x="15" y="50">41° F (5° C) and <tspan class="emoji">🌤</tspan> today.</text>
   </g>
 
   <!-- typing 3 -->
@@ -375,7 +375,7 @@
 
   <!-- Have a great... -->
   <g transform="translate(10, 288)" class="msg-6">
-    <rect width="260" height="42" rx="18.0355" class="bubble" />
-    <text x="15" y="27">Have a great Wednesday! <tspan class="emoji">👋</tspan></text>  
+    <rect width="245" height="42" rx="18.0355" class="bubble" />
+    <text x="15" y="27">Have a great Thursday! <tspan class="emoji">👋</tspan></text>  
   </g>
 </svg>
