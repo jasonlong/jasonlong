@@ -1,4 +1,4 @@
-<svg width="550" height="350" viewBox="0 0 550 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="550" height="374" viewBox="0 0 550 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     .bubble {
       fill: #e9e9eb;
@@ -322,7 +322,7 @@
 
   <!-- Bluesky -->
   <g transform="translate(10, 192)" class="msg-4">
-    <rect width="513" height="42" rx="18" class="bubble" />
+    <rect width="513" height="66" rx="18" class="bubble" />
     <text x="15" y="27">You can find me on Bluesky at</text>
     <text x="15" y="50">
       <a xlink:href="https://bsky.app/profile/jasonlong.me">https://bsky.app/profile/jasonlong.me</a>
@@ -330,7 +330,7 @@
   </g>
 
   <!-- typing 5 -->
-  <g transform="translate(10, 240)" class="typing-5">
+  <g transform="translate(10, 264)" class="typing-5">
     <rect x="8.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
     <circle cx="13.591" cy="33.091" r="7.68185" class="bubble" />
     <circle cx="3.54547" cy="41.9547" r="3.54547" class="bubble" />
@@ -348,13 +348,13 @@
   </g>
 
   <!-- Thanks -->
-  <g transform="translate(10, 240)" class="msg-5">
+  <g transform="translate(10, 264)" class="msg-5">
     <rect width="225" height="42" rx="18" class="bubble" />
     <text x="15" y="27">Thanks for stopping by</text>
   </g>
 
   <!-- typing 6 -->
-  <g transform="translate(10, 288)" class="typing-6">
+  <g transform="translate(10, 312)" class="typing-6">
     <rect x="8.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
     <circle cx="13.591" cy="33.091" r="7.68185" class="bubble" />
     <circle cx="3.54547" cy="41.9547" r="3.54547" class="bubble" />
@@ -372,7 +372,7 @@
   </g>
 
   <!-- Have a great... -->
-  <g transform="translate(10, 288)" class="msg-6">
+  <g transform="translate(10, 312)" class="msg-6">
     <rect width="{dayBubbleWidth}" height="42" rx="18" class="bubble" />
     <text x="15" y="27">Have a great {todayDay}! <tspan class="emoji">👋</tspan></text>  
   </g>
