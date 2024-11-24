@@ -1,9 +1,9 @@
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY
 
-let fs = require('fs')
-let got = require('got')
-let qty = require('js-quantities')
-let formatDistance = require('date-fns/formatDistance')
+import fs from 'fs'
+import got from 'got'
+import Qty from 'js-quantities/esm'
+import { formatDistance } from 'date-fns'
 
 let WEATHER_DOMAIN = 'http://dataservice.accuweather.com'
 
@@ -39,7 +39,7 @@ const emojis = {
 }
 
 // Cheap, janky way to have variable bubble width
-dayBubbleWidths = {
+const dayBubbleWidths = {
   Monday: 235,
   Tuesday: 235,
   Wednesday: 260,
@@ -65,11 +65,10 @@ let url = `forecasts/v1/daily/1day/${locationKey}?apikey=${WEATHER_API_KEY}`
 
 got(url, { prefixUrl: WEATHER_DOMAIN })
   .then((response) => {
-    console.log(response.body)
     let json = JSON.parse(response.body)
 
     const degF = Math.round(json.DailyForecasts[0].Temperature.Maximum.Value)
-    const degC = Math.round(qty(`${degF} tempF`).to('tempC').scalar)
+    const degC = Math.round(Qty(`${degF} tempF`).to('tempC').scalar)
     const icon = json.DailyForecasts[0].Day.Icon
 
     fs.readFile('template.svg', 'utf-8', (error, data) => {
