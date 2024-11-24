@@ -136,22 +136,22 @@
     @keyframes msg-5 {
       0% {
         opacity: 0;
-        transform: translate(10px, 245px);
+        transform: translate(10px, 269px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 240px);
+        transform: translate(10px, 264px);
       }
     }
 
     @keyframes msg-6 {
       0% {
         opacity: 0;
-        transform: translate(10px, 293px);
+        transform: translate(10px, 317px);
       }
       100% {
         opacity: 1;
-        transform: translate(10px, 288px);
+        transform: translate(10px, 312px);
       }
     }
 
@@ -322,7 +322,7 @@
 
   <!-- Bluesky -->
   <g transform="translate(10, 192)" class="msg-4">
-    <rect width="513" height="66" rx="18" class="bubble" />
+    <rect width="350" height="66" rx="18" class="bubble" />
     <text x="15" y="27">You can find me on Bluesky at</text>
     <text x="15" y="50">
       <a xlink:href="https://bsky.app/profile/jasonlong.me">https://bsky.app/profile/jasonlong.me</a>
