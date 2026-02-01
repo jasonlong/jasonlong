@@ -29,3 +29,13 @@ jobs:
           add: "*.svg"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create issue on failure
+        if: failure()
+        run: |
+          gh issue create \
+            --title "README workflow failed" \
+            --body "The daily README update workflow failed. [View the run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" \
+            --label "bug"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
