@@ -62,35 +62,59 @@ const psTime = formatDistance(new Date(2020, 12, 14), today, {
 // Today's weather from Open-Meteo (free, no API key required)
 const url = `https://api.open-meteo.com/v1/forecast?latitude=${LATITUDE}&longitude=${LONGITUDE}&daily=temperature_2m_max,weather_code&temperature_unit=fahrenheit&timezone=auto`
 
+console.log(`Fetching weather for ${LATITUDE}, ${LONGITUDE}...`)
+
 got(url)
   .then((response) => {
-    const json = JSON.parse(response.body)
+    let json
+    try {
+      json = JSON.parse(response.body)
+    } catch (e) {
+      console.error('Failed to parse API response:', response.body.slice(0, 500))
+      process.exit(1)
+    }
+
+    if (!json.daily || !json.daily.temperature_2m_max || !json.daily.weather_code) {
+      console.error('Unexpected API response structure:', JSON.stringify(json, null, 2))
+      process.exit(1)
+    }
 
     const degF = Math.round(json.daily.temperature_2m_max[0])
     const degC = Math.round((degF - 32) * 5 / 9)
     const weatherCode = json.daily.weather_code[0]
+    const emoji = emojis[weatherCode] || '🌡'
+
+    console.log(`Weather: ${degF}°F (${degC}°C), code ${weatherCode} ${emoji}`)
 
     fs.readFile('template.svg', 'utf-8', (error, data) => {
       if (error) {
-        console.error(error)
-        return
+        console.error('Failed to read template.svg:', error.message)
+        process.exit(1)
       }
 
       data = data.replace('{degF}', degF)
       data = data.replace('{degC}', degC)
-      data = data.replace('{weatherEmoji}', emojis[weatherCode] || '🌡')
+      data = data.replace('{weatherEmoji}', emoji)
       data = data.replace('{psTime}', psTime)
       data = data.replace('{todayDay}', todayDay)
       data = data.replace('{dayBubbleWidth}', dayBubbleWidths[todayDay])
 
       fs.writeFile('chat.svg', data, (err) => {
         if (err) {
-          console.error(err)
+          console.error('Failed to write chat.svg:', err.message)
+          process.exit(1)
         }
+        console.log('Successfully updated chat.svg')
       })
     })
   })
   .catch((err) => {
-    console.error('Failed to fetch weather:', err.message)
+    console.error('Failed to fetch weather from Open-Meteo')
+    console.error('URL:', url)
+    console.error('Error:', err.message)
+    if (err.response) {
+      console.error('Status:', err.response.statusCode)
+      console.error('Body:', err.response.body?.slice(0, 500))
+    }
     process.exit(1)
   })
