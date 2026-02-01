@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "date-fns": "^4.1.0",
-    "got": "^14.4.5",
-    "js-quantities": "^1.8.0"
+    "got": "^14.4.5"
   }
 }
